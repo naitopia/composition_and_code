@@ -464,8 +464,12 @@ nav {
   padding: 20px;
 }
 
-.slide-steps .explore-step:last-child {
-  /* keep grid borders */
+.slide-steps--two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.slide-steps--two-col .explore-step:last-child {
+  grid-column: 1 / -1;
 }
 
 /* Phase nav bar */
